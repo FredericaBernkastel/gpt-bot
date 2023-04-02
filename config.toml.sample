@@ -1,0 +1,5 @@
+# rename to config.toml
+
+prefix = "!"
+discord_token = ""
+chatgpt_key = ""
