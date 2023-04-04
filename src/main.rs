@@ -10,7 +10,7 @@ use {
 #[tokio::main]
 async fn main () -> Result<()> {
   // read config from ./config.toml
-  let config = Config::from_file().unwrap();
+  let config = Config::from_file()?;
 
   let gpt_client = ChatGPT::new(&config.chatgpt_key)?;
 
